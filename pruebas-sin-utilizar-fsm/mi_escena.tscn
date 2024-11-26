@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6aeieryo86tg"]
+
+[ext_resource type="PackedScene" uid="uid://m46o3g61e50" path="res://static_body_2d.tscn" id="1_mff7v"]
+[ext_resource type="PackedScene" uid="uid://dvih0iem55mbu" path="res://mi_player.tscn" id="2_1w2i1"]
+
+[node name="miEscena" type="Node2D"]
+
+[node name="StaticBody2D" parent="." instance=ExtResource("1_mff7v")]
+position = Vector2(572, 437)
+
+[node name="miPlayer" parent="." instance=ExtResource("2_1w2i1")]
+position = Vector2(572, 368)
+
+[node name="Camera2D" type="Camera2D" parent="miPlayer"]
